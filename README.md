@@ -9,10 +9,10 @@ Este meu projeto em Python desenvolvido com o objetivo de praticar lógica de pr
 ## ⚙️ Funcionalidades a serem adicionadas/melhoradas
 
 - [x] Menu principal
-- [ ] Adicionar tarefas
-- [ ] Listar tarefas
-- [ ] Remover tarefas
-- [ ] Marcar tarefas como concluídas
+- [x] Adicionar tarefas
+- [x] Listar tarefas
+- [x] Remover tarefas
+- [x] Marcar tarefas como concluídas
 
 ##  Linguagem
 
