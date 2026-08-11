@@ -1,19 +1,32 @@
-print("=== Gerenciador de tarefas ===")
-print("1. Adicionar tarefa")
-print("2. ver tarefas")
-print("3. Sair")
+tarefas = []
+opcao = ""
 
-opcao = input("Oque deseja fazer? ")
 
-if opcao == "1":
-    tarefa = input("Digite sua tarefa: ")
+while opcao != "3":
+    print("=== Gerenciador de tarefas ===")
+    print("1. Adicionar tarefa")
+    print("2. Ver tarefas")
+    print("3. Sair")
 
-    if opcao == "2":
+    opcao = input("O que deseja fazer? ")
+
+    
+    if opcao == "1":
+        tarefa = input("Digite sua tarefa: ")
+        tarefas.append(tarefa)
+        print(f"Tarefa '{tarefa}' adicionada com sucesso!")
+
+    
+    elif opcao == "2":
         print("Tarefas:")
-        print(f"- {tarefa}")
+        for tarefa in tarefas:
+            print(f"- {tarefa}")
 
-        if opcao == "3":
-            print("Saindo do gerenciador de tarefas...")
+    
+    elif opcao == "3":
+        print("Saindo...")
 
-            if opcao < 3:
-                print("Opçao invalida.")
+    
+    else:
+        print("Opção inválida.")
+        
