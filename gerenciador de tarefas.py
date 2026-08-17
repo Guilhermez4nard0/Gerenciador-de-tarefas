@@ -27,14 +27,17 @@ while opcao != "4":
                 print(f"- {tarefa}")
 
 
-        if opcao == "3":
-            tarefa = input("Digite a tarefa a ser removida: ")
+        elif opcao == "3":
+        numero = int(input("Digite o número da tarefa a ser removida: "))
 
-            if tarefa in tarefas:
-                tarefas.remove(tarefa)
-                print(f"Tarefa '{tarefa}' removida com sucesso!")
-            else:
-                print(f"Tarefa '{tarefa}' não encontrada.")
+            for i, t in enumerate(tarefas, start=1):
+
+             if i == numero:
+                tarefas.pop(i-1)
+                print(f"Tarefa' {t} 'removida com sucesso!")
+                break
+        else:
+            print("numero de tarefa inválido.")
 
 
     elif opcao == "4":
