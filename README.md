@@ -12,6 +12,7 @@ Este meu projeto em Python desenvolvido com o objetivo de praticar lógica de pr
 - [x] Adicionar tarefas
 - [x] Listar tarefas
 - [x] Remover tarefas
+- [ ] Marcar tarefas como conluidas
 
 ##  Linguagem
 
